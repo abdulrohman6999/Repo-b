@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: repo-b-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: repo-b-app
+  template:
+    metadata:
+      labels:
+        app: repo-b-app
+    spec:
+      containers:
+      - name: repo-b-app
+        image: mini-project:production
+        ports:
+        - containerPort: 5000
