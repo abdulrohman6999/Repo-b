@@ -7,7 +7,7 @@ on:
 
 jobs:
   use-reusable:
-    uses: abdlroman/reusable-workflow-repo/.github/workflows/reusable-ci.yml@main
+    uses: abdlroman/Example-Reusable-Workflow/.github/workflows/ci.yml@main
     with:
       environment: production
     secrets:
