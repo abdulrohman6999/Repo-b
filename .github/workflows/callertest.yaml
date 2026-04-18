@@ -1,0 +1,14 @@
+name: Caller Test Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  use-reusable:
+    uses: abdulrohman6999/Example-Reusable-Workflow/.github/workflows/Testpair.yaml@main
+    with:
+      environment: production
+    secrets:
+      docker_username: ${{ secrets.DOCKER_USERNAME }}
+      docker_password: ${{ secrets.DOCKER_PASSWORD }}
