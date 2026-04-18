@@ -11,5 +11,5 @@ jobs:
     with:
       environment: production
     secrets:
-      USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+      DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
